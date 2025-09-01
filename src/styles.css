@@ -1,1 +1,211 @@
-/* You can add global styles to this file, and also import other style files */
+/* Remove any unwanted body/section gaps */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000; /* fallback background */
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: rgba(0,0,0,0.8); /* dark transparent navbar */
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('./assets/bgPhoto.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 700px;
+  padding: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* About Section */
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.about-section .container {
+  z-index: 1;
+  position: relative;
+}
+
+/* Contact Section */
+.contact-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.contact-section .container {
+  z-index: 1;
+  position: relative;
+}
+
+/* Overlay effect (optional if you want extra dark layer) */
+.about-section::before,
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+/* Container */
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 900px;
+}
+
+/* Compact Navbar */
+.navbar.navbar-compact {
+  background: rgba(0,0,0,0.85); /* keeps transparency */
+  padding: 0.2rem 1rem !important;
+  min-height: 48px !important;
+}
+
+/* Brand (logo text) */
+.navbar.navbar-compact .navbar-brand {
+  font-size: 1.1rem !important;
+  padding: 0.2rem 0 !important;
+}
+
+/* Links */
+.navbar.navbar-compact .nav-link {
+  padding: 0.2rem 0.8rem !important;
+  font-size: 0.95rem !important;
+}
+
+/* Toggler button */
+.navbar.navbar-compact .navbar-toggler {
+  padding: 0.2rem 0.4rem !important;
+  font-size: 1rem !important;
+}
+
+.navbar.navbar-compact .navbar-toggler-icon {
+  width: 1.1em !important;
+  height: 1.1em !important;
+}
+
+
+/* Compact Navbar (GitHub-style slim) */
+.navbar.navbar-compact {
+  background: rgba(0,0,0,0.85); /* dark semi-transparent */
+  padding: 0.15rem 1rem !important;  /* slim vertical padding */
+  min-height: 44px !important;       /* slim bar height */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+/* Brand (logo text) */
+.navbar.navbar-compact .navbar-brand {
+  font-size: 1rem !important;
+  padding: 0.15rem 0 !important;
+  line-height: 1.2;
+}
+
+/* Nav links */
+.navbar.navbar-compact .nav-link {
+  padding: 0.15rem 0.75rem !important;
+  font-size: 0.95rem !important;
+}
+
+/* Toggler button */
+.navbar.navbar-compact .navbar-toggler {
+  padding: 0.15rem 0.35rem !important;
+  font-size: 0.9rem !important;
+}
+
+.navbar.navbar-compact .navbar-toggler-icon {
+  width: 1em !important;
+  height: 1em !important;
+}
+
+.about-section {
+  background-color: #121212; /* consistent with site */
+  padding: 60px 20px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 20px;
+}
+
+.about-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffc107;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.about-section p,
+.about-section li {
+  font-size: 1.05rem;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+.about-section ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.about-section img {
+  max-width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+}
+
+.about-section {
+  background: linear-gradient(135deg, #1c1c1c, #2b2b2b); /* same as contact */
+  padding: 60px 20px;
+}
+
+/* Default link color */
+.navbar .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Make the active link gold/yellow */
+.navbar .nav-link.active {
+  color: #ffc107 !important;   /* Bootstrap gold */
+  font-weight: 600;
+}
+
+/* Optional: hover effect */
+.navbar .nav-link:hover {
+  color: #e6b800 !important;  /* darker gold on hover */
+}
